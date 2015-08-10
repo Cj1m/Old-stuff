@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,8 +14,9 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <link href="carousel.css" rel="stylesheet">
+    <link href="css/request.css" rel="stylesheet">
+
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -59,22 +61,50 @@
     </div>
 
     <br><br><br><br><br>
-    <div class="container">
-    <form action="MAILTO:cj1mckay@gmail.com" method="post" enctype="text/plain">
-    Plugin name:<br>
-    <input type="text" name="name" value="name"><br>
-    Skype:<br>
-    <input type="text" name="skype" value="Skype name"><br>
-    Price (how much you're willing to pay for the plugin):<br>
-    <input type="text" name="price" value="$"><br>
-    Detailed description of plugin:<br>
-    <textarea type="text" name="description" cols="40" rows="5"></textarea><br><br>
-    <input type="submit" value="Send">
-    </form>
+     <div id= "wrapper">
+      <div style="width: 800px; margin: 0px auto 0px auto;">
+        <div id="request">
+            <form class="form-horizontal" action="mailto:cj1mckay@gmail.com?Subject=Plugin%20Request">
+              <fieldset>
 
-    <footer style="position:absolute;bottom:0px;">
+                <!-- Form Name -->
+                <legend>Request a plugin</legend>
+              <div class="control-group">
+                  <label class="control-label" for="name">Your Name:</label>
+                <div class="controls">
+                  <input id="name" name="name" type="text" placeholder="" class="input-xlarge" required="">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="skype">Skype Name:</label>
+                <div class="controls">
+                  <input id="skype" name="skype" type="text" placeholder="" class="input-xlarge" required="">
+                  <p class="help-block" style="color:black">Skype is required for us to communicate with you</p>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="price">Price:</label>
+                <div class="controls">
+                  <input id="price" name="price" type="text" placeholder="$" class="input-xlarge" required="">
+                  <p class="help-block" style="color:black">How much are you willing to pay for your plugin</p>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="description">Description of plugin:</label>
+                <div class="controls">
+                  <textarea id="description" name="description"></textarea>
+                </div>
+              </div>
+
+              </fieldset>
+              </form>
+          </div>
+        </div>
+
+
+    <div style="bottom:0px; text-align: center;">
       <p>&copy; 2015 Elemental Development Group.</p>
-    </footer>
+    </div>
   </div>
 
 
@@ -86,7 +116,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="../../assets/js/vendor/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->

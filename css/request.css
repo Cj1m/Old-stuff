@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color:transparent;
+     background: url(../imgs/request_bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+#wrapper {
+    width: auto;
+    height: auto;
+    margin:0;
+    padding: 0;
+    color: #000000;
+}
+
+#request {
+	margin-top: 80px;
+	text-align: center;
+	padding-bottom: 40px;
+	padding-top: 20px;
+	-webkit-box-shadow:rgba(0,0,0,0.5) -7px 4px 7px;
+	/*background-color:rgba(255,255,255,0.3);*/
+	animation-name: bgcolor;
+    animation-duration: 15s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bgcolor {
+	0% 	{background-color:rgba(255,255,255,0.3);}
+    50% {background-color:rgba(50,50,50,0.5);}
+	100% {background-color:rgba(255,255,255,0.3);}
+}
+table {
+	margin-bottom: 20px;
+}
+
+#header {
+    background: url(../img/top-header.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+	 margin-bottom: 4%;
+}
+
+
+legend {
+    text-align: center;
+}
+
+.content {
+	display: block;
+	margin: 0 0 0 0;
+
+}
