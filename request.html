@@ -64,7 +64,7 @@
      <div id= "wrapper">
       <div style="width: 800px; margin: 0px auto 0px auto;">
         <div id="request">
-            <form class="form-horizontal" action="mailto:cj1mckay@gmail.com?Subject=Plugin%20Request">
+            <form class="form-horizontal">
               <fieldset>
 
                 <!-- Form Name -->
@@ -97,14 +97,16 @@
 
               </div>
 
-              <div class="control-group" id="submit-button">
-                <input type="submit" value="Submit">
-              </div>
+
 
 
 
               </fieldset>
               </form>
+
+              <div class="control-group" id="submit-button">
+                <button onclick="sendRequestMail();">Submit</button>
+              </div>
           </div>
         </div>
 
@@ -122,6 +124,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/sendemail.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->

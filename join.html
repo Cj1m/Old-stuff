@@ -60,15 +60,18 @@
 
     <br><br><br><br><br>
     <div class="container">
-    <form action="MAILTO:cj1mckay@gmail.com" method="post" enctype="text/plain">
+    <form enctype="text/plain">
     IGN (Minecraft username):<br>
-    <input type="text" name="ign" value="ign"><br>
+    <input id="ign" type="text" name="ign" value=""><br>
     Skype:<br>
-    <input type="text" name="skype" value="your email"><br>
+    <input id="skype" type="text" name="skype" value=""><br>
     Experience:<br>
-    <textarea type="text" name="experience" value="Talk about your programming experience (doesn't need to be limited to bukkit development)" cols="40" rows="5"></textarea><br><br>
-    <input type="submit" value="Send">
+    <textarea id="exp" type="text" name="experience" cols="40" rows="5"></textarea><br><br>
     </form>
+
+    <div class="control-group" id="submit-button">
+      <button onclick="sendAppMail();">Submit</button>
+    </div>
 
     <footer style="position:absolute;bottom:0px;">
       <p>&copy; 2015 Elemental Development Group.</p>
@@ -83,6 +86,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/sendemail.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
